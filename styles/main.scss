@@ -1,13 +1,13 @@
-@import './core/mixins',
-'./core/functions',
-'./config/variables',
-'./config/resets',
-'./components/menu',
-'./config/responsive',
-'./home',
-'./about',
-'./projects',
-'./contact';
+@import './base/resets',
+'./base/variables',
+'./base/mixins',
+'./base/functions',
+'./layout/home',
+'./layout/about',
+'./layout/projects',
+'./layout/contact',
+'./modules/menu',
+'./state/responsive';
 body {
     background: $primary-color;
     color: set-text-color($primary-color);

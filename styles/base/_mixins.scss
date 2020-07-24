@@ -9,6 +9,13 @@
     flex-direction: $direction;
 }
 
+@mixin flexEven($direction) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: $direction;
+}
+
 @mixin theme($light-theme: true) {
     @if $light-theme {
         background: lighten($primary-color, 100%);

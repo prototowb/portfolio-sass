@@ -23,4 +23,24 @@
             }
         }
     }
+    .about {
+        font-size: 1.5rem;
+    }
+    .projects {
+        &__image {
+            height: 40vh;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+    .contact {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            margin-left: 60px;
+        }
+    }
 }
