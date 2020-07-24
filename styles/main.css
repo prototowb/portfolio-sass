@@ -80,6 +80,7 @@
   background: #211b32;
   border-bottom: 5px solid #13c03e;
   padding: 1rem 1rem 2rem 1rem;
+  line-height: 1.5;
 }
 
 .about .bio__item h2,
@@ -483,7 +484,7 @@ body {
   color: #fff;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 h1,
