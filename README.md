@@ -42,7 +42,7 @@ This is only a documentation project for educational purpose.
 
 ## Maintainers
 
-@Prototowb.
+[@Prototowb}(https://github.com/prototowb).
 
 ## Contributing
 Feel free to dive in! Open an issue or submit PRs.
@@ -50,7 +50,7 @@ Feel free to dive in! Open an issue or submit PRs.
 portfolio-sass follows the Contributor Covenant Code of Conduct.
 
 ### Contributors
-This project exists thanks to someone special. :D So, thank you for reintroducing me to the power of sass/scss!
+This project exists thanks to someone special. :D So, thank you for reintroducing me to the power of SASS/SCSS!
 
 ## License
-MIT © Tobias Rauer
+[MIT](LICENSE) © Tobias Rauer
