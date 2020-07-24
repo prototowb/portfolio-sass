@@ -1,5 +1,8 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+[![powered-by-sass](https://img.shields.io/badge/powered%20by-sass-pink.svg?style=flat-square)](https://sass-lang.com)
+
+
 A project to learn sass with - That is what this repository is. Maybe i will build around it once finished. We'll see :) https://prototowb.github.io/portfolio-sass/
 
 This repository contains:
@@ -26,7 +29,7 @@ The goals for this repository are:
 
 ## Install
 
-This project uses sass. Go check it out if you don't have it locally installed yet.
+This project uses [sass](https://sass-lang.com). Go check it out if you don't have it locally installed yet.
 ```
 $ npm install --global sass
 ```
