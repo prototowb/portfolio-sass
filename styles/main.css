@@ -13,8 +13,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image1.jpg") left center;
-  background-size: fit;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9) 30%, rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image.jpg") left center;
+  background-size: cover;
 }
 
 .home__name {
@@ -36,7 +36,7 @@
 .about__image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image1.jpg") left center;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image1.jpg") left center;
   background-size: fit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,8 +113,8 @@
 .projects__image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image1.jpg") left center;
-  background-size: fit;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image.jpg") left center;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +238,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image1.jpg") left center;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image1.jpg") left center;
   background-size: fit;
 }
 
@@ -464,6 +464,20 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__items {
+    padding-top: 30px;
+  }
+}
+
 body {
   background: #0b0911;
   color: #fff;
@@ -481,6 +495,11 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .text-secondary {

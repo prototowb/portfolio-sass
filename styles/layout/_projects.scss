@@ -3,8 +3,8 @@
     &__image {
         height: 30vh;
         width: 100%;
-        background: linear-gradient( 45deg, rgba($primary-color, 0.9), rgba($primary-color, 0.60)), url('../img/image1.jpg') left center;
-        background-size: fit;
+        background: linear-gradient( 45deg, rgba($primary-color, 0.9), rgba($primary-color, 0.60)), url('../img/resized-lg/image.jpg') left center;
+        background-size: cover;
         display: flex;
         flex-direction: colum;
         align-items: flex-end;

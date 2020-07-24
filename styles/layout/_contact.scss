@@ -2,7 +2,7 @@
     height: 100%;
     overflow: hidden;
     @include flexEven(column);
-    background: linear-gradient( 45deg, rgba($primary-color, 0.9), rgba($primary-color, 0.60)), url('../img/image1.jpg') left center;
+    background: linear-gradient( 45deg, rgba($primary-color, 0.9), rgba($primary-color, 0.60)), url('../img/resized-lg/image1.jpg') left center;
     background-size: fit;
     h2 {
         font-size: 3rem;

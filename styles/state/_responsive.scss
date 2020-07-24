@@ -37,10 +37,21 @@
             font-size: 3rem;
         }
     }
-    .contact {
-        &__list {
-            grid-template-columns: repeat(3, 1fr);
-            margin-left: 60px;
-        }
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 60px;
+    }
+}
+
+@include media-lg {
+    .projects__items {
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 15px;
+    }
+}
+
+@include media-xl {
+    .projects__items {
+        padding-top: 30px;
     }
 }
