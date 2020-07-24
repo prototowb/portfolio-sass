@@ -5,34 +5,6 @@
   padding: 0;
 }
 
-@media screen and (min-width: 758px) {
-  .menu-btn {
-    visibility: hidden;
-  }
-  .nav {
-    visibility: visible;
-    position: fixed;
-    top: 0;
-    right: 0;
-    border: 1px solid red;
-  }
-  .nav .menu-nav {
-    display: block;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    height: 100%;
-    background: transparent;
-    text-align: right;
-  }
-  .nav .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-  }
-  .nav .menu-nav__link {
-    font-size: 1.5rem;
-  }
-}
-
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -97,26 +69,20 @@
 }
 
 .nav {
-  background-color: #0b0911;
-  border-left: 2px solid #13c03e;
   position: fixed;
   top: 0;
   right: 0;
-  width: 45vw;
+  width: 100vw;
   opacity: 1;
-  -webkit-transform: translateX(calc(100% - 2px));
-          transform: translateX(calc(100% - 2px));
-  -webkit-transition: all 0.24s ease-in-out;
-  transition: all 0.24s ease-in-out;
+  visibility: hidden;
 }
 
 .nav.open {
   visibility: visible;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .nav .menu-nav {
+  border-left: 2px solid #13c03e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,17 +98,18 @@
           justify-content: center;
   height: 100vh;
   overflow: hidden;
+  background-color: #0b0911;
   list-style-type: none;
   padding-right: 1rem;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: all 0.24s ease-in-out;
   transition: all 0.24s ease-in-out;
 }
 
 .nav .menu-nav.open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .nav .menu-nav__item {
@@ -193,6 +160,34 @@
 .menu-nav__item:nth-child(4) {
   -webkit-transition-delay: 0.55s;
           transition-delay: 0.55s;
+}
+
+@media screen and (min-width: 758px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .nav .menu-nav {
+    border: none;
+    display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    height: 100%;
+    background: transparent !important;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
 }
 
 .home {

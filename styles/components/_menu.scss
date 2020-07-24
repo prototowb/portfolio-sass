@@ -49,32 +49,30 @@
 }
 
 .nav {
-    background-color: $primary-color;
-    border-left: 2px solid $accent-color;
     position: fixed;
     top: 0;
     right: 0;
-    width: 45vw;
+    width: 100vw;
     opacity: 1;
-    transform: translateX(calc(100% - 2px));
-    @include transition-ease;
+    visibility: hidden;
     &.open {
         visibility: visible;
-        transform: translateX(0);
     }
     .menu-nav {
+        border-left: 2px solid $accent-color;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
         height: 100vh;
         overflow: hidden;
+        background-color: $primary-color;
         list-style-type: none;
         padding-right: 1rem;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         @include transition-ease;
         &.open {
-            transform: translateY(0);
+            transform: translateX(0);
         }
         &__item {
             transform: translateX(100vw);
