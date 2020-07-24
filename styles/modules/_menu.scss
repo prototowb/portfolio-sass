@@ -80,9 +80,9 @@
             &.open {
                 transform: translateX(0);
             }
-        }
-        &.active>a {
-            color: $accent-color;
+            &.active>a {
+                color: $accent-color;
+            }
         }
         &__link {
             display: inline-block;

@@ -380,7 +380,7 @@
           transform: translateX(0);
 }
 
-.nav .menu-nav.active > a {
+.nav .menu-nav__item.active > a {
   color: #13c03e;
 }
 
