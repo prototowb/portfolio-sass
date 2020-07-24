@@ -1,9 +1,13 @@
-@import './resets',
-'./variables',
-'./mixins',
-'./functions',
+@import './core/mixins',
+'./core/functions',
+'./config/variables',
+'./config/resets',
+'./config/responsive',
+'./components/menu',
 './home',
-'./menu';
+'./about',
+'./projects',
+'./contact';
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
@@ -20,7 +24,11 @@ h3 {
 
 a {
     color: set-text-color($primary-color);
-    text-decoration: mone;
+    text-decoration: none;
+}
+
+.text-secondary {
+    color: $accent-color;
 }
 
 header {

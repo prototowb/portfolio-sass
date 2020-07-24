@@ -1,0 +1,49 @@
+.about {
+    padding-bottom: 2rem;
+    &__image {
+        height: 50vh;
+        width: 100%;
+        background: linear-gradient( 45deg, rgba($primary-color, 0.9), rgba($primary-color, 0.60)), url('../img/image1.jpg') left center;
+        background-size: fit;
+        display: flex;
+        flex-direction: colum;
+        align-items: flex-end;
+        justify-content: center;
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+    &__bio {
+        width: 80%;
+        text-align: center;
+        .text-secondary {
+            padding-bottom: 1rem;
+        }
+    }
+    .bio {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        &__item {
+            background: lighten($primary-color, 10%);
+            border-bottom: 5px solid $accent-color;
+            padding: 1rem 1rem 2rem 1rem;
+            h2,
+            h3 {
+                margin: 0.5rem 0;
+            }
+            h6 {
+                margin: 0.9rem 0;
+            }
+        }
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        transform: rotate(90deg) translate(-3rem, -5rem)
+    }
+}
