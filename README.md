@@ -42,7 +42,7 @@ This is only a documentation project for educational purpose.
 
 ## Maintainers
 
-[@Prototowb}(https://github.com/prototowb).
+[@Prototowb](https://github.com/prototowb)
 
 ## Contributing
 Feel free to dive in! Open an issue or submit PRs.
