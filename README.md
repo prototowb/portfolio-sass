@@ -20,7 +20,7 @@ This repository contains:
 
 The goals for this repository are:
 
-1. To document my journey learning sass, by building a well crafted portfolio.
+1. To document my journey learning sass by building a well crafted portfolio.
 2. Show the implementation of sass in a real project.
 3. Learing how to write good READMEs - This Readme is fully "standard-readme" compliant.
 
