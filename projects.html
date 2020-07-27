@@ -53,7 +53,7 @@
                     </picture>
                     <div class="projects__btns">
                         <a href="#!" class="projects__btn">
-                            <i class="fas fa-eye fa-2x"></i>
+                            <i class="fas fa-eye fa-2x" onclick="openModal();currentSlide(1)"></i>
                             <p>preview</p>
                         </a>
                         <a href="#!" class="projects__btn">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="projects__item">
-                    <img src="img/project-2.jpg" alt="My Project">
+                    <img src="img/project-2.jpg" alt="My Project" onclick="openModal();currentSlide(2)">
                     <div class="projects__btns">
                         <a href="#!" class="projects__btn">
                             <i class="fas fa-eye fa-2x"></i>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="projects__item">
-                    <img src="img/project-3.jpg" alt="My Project">
+                    <img src="img/project-3.jpg" alt="My Project" onclick="openModal();currentSlide(3)">
                     <div class="projects__btns">
                         <a href="#!" class="projects__btn">
                             <i class="fas fa-eye fa-2x"></i>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="projects__item">
-                    <img src="img/project-4.jpg" alt="My Project">
+                    <img src="img/project-4.jpg" alt="My Project" onclick="openModal();currentSlide(4)">
                     <div class="projects__btns">
                         <a href="#!" class="projects__btn">
                             <i class="fas fa-eye fa-2x"></i>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div class="projects__item">
-                    <img src="img/project-5.jpg" alt="My Project">
+                    <img src="img/project-5.jpg" alt="My Project" onclick="openModal();currentSlide(5)">
                     <div class="projects__btns">
                         <a href="#!" class="projects__btn">
                             <i class="fas fa-eye fa-2x"></i>
@@ -116,32 +116,161 @@
                     </div>
                 </div>
                 <div class="projects__item">
-                    <img src="img/project-6.jpg" alt="My Project">
-                    <div class="projects__btns">
-                        <a href="#!" class="projects__btn">
-                            <i class="fas fa-eye fa-2x"></i>
+                    <img src="img/project-6.jpg" alt="My Project" onclick="openModal();currentSlide(6)">
+                    <div class=" projects__btns ">
+                        <a href="#! " class="projects__btn ">
+                            <i class="fas fa-eye fa-2x "></i>
                             <p>preview</p>
                         </a>
-                        <a href="#!" class="projects__btn">
-                            <i class="fab fa-github fa-2x"></i>
+                        <a href="#! " class="projects__btn ">
+                            <i class="fab fa-github fa-2x "></i>
                             <p>preview</p>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="social-icons">
-                <a href="#!">
-                    <i class="fab fa-twitter fa-2x"></i>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal() ">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="img/project-1.jpg " style="width:100% ">
+                        <div class="case-study">
+                            <div class="case-study__item">
+                                <h2 class="text-secondary">My</h2>
+                                <h3>Some Fancy Company Name</h3>
+                                <h6>Frontend Developer</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
+                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
+                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="img/project-2.jpg " style="width:100% ">
+                        <div class="case-study">
+                            <div class="case-study__item">
+                                <h2 class="text-secondary">My Journey</h2>
+                                <h3>Some Fancy Company Name</h3>
+                                <h6>Frontend Developer</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
+                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
+                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="img/project-3.jpg " style="width:100% ">
+                        <div class="case-study">
+                            <div class="case-study__item">
+                                <h2 class="text-secondary">My Journey To</h2>
+                                <h3>Some Fancy Company Name</h3>
+                                <h6>Frontend Developer</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
+                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
+                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext ">4 / 6</div>
+                        <img src="img/project-4.jpg " style="width:100% ">
+                        <div class="case-study">
+                            <div class="case-study__item">
+                                <h2 class="text-secondary">My Journey To Higher</h2>
+                                <h3>Some Fancy Company Name</h3>
+                                <h6>Frontend Developer</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
+                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
+                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext ">5 / 6</div>
+                        <img src="img/project-5.jpg " style="width:100% ">
+                        <div class="case-study">
+                            <div class="case-study__item">
+                                <h2 class="text-secondary">My Journey To Higher-Order</h2>
+                                <h3>Some Fancy Company Name</h3>
+                                <h6>Frontend Developer</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
+                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
+                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext ">6 / 6</div>
+                        <img src="img/project-6.jpg " style="width:100% ">
+                        <div class="case-study">
+                            <div class="case-study__item">
+                                <h2 class="text-secondary">My Journey To Higher-Order Functions</h2>
+                                <h3>Some Fancy Company Name</h3>
+                                <h6>Frontend Developer</h6>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
+                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
+                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1) ">&#10095;</a>
+
+                    <div class="demo-container">
+                        <div class="column">
+                            <img class="demo cursor " src="img/project-1.jpg " style="width:100% " onclick="currentSlide(1) " alt="Nature and sunrise ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor " src="img/project-2.jpg " style="width:100% " onclick="currentSlide(2) " alt="Snow ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor " src="img/project-3.jpg " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor " src="img/project-4.jpg " style="width:100% " onclick="currentSlide(4) " alt="Northern Lights ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor " src="img/project-5.jpg " style="width:100% " onclick="currentSlide(5) " alt="Northern Lights ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor " src="img/project-6.jpg " style="width:100% " onclick="currentSlide(6) " alt="Northern Lights ">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="social-icons ">
+                <a href="#! ">
+                    <i class="fab fa-twitter fa-2x "></i>
                 </a>
-                <a href="#!">
-                    <i class="fab fa-facebook fa-2x"></i>
+                <a href="#! ">
+                    <i class="fab fa-facebook fa-2x "></i>
                 </a>
-                <a href="#!">
-                    <i class="fab fa-instagram fa-2x"></i>
+                <a href="#! ">
+                    <i class="fab fa-instagram fa-2x "></i>
                 </a>
-                <a href="#!">
-                    <i class="fab fa-github fa-2x"></i>
+                <a href="#! ">
+                    <i class="fab fa-github fa-2x "></i>
                 </a>
             </div>
 
@@ -149,8 +278,8 @@
         </section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js "></script>
+    <script src="scripts/main.js "></script>
 </body>
 
 </html>
