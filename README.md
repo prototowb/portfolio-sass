@@ -38,7 +38,7 @@ When you install Sass on the command line, you'll be able to run the sass execut
 ```
 sass source/stylesheets/index.scss build/stylesheets/index.css
 ```
-First install Sass using one of the options below, then run sass --version to be sure it installed correctly. You can also run sass --help for more information about the command-line interface.
+You can also run sass --help for more information about the command-line interface.
 
 ## Usage
 
