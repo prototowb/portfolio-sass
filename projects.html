@@ -130,15 +130,15 @@
                 </div>
             </div>
 
-            <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal() ">&times;</span>
-                <div class="modal-content">
+            <div id="pModal" class="projects-modal">
+                <span class="projects-modal__close" onclick="closeModal() ">&times;</span>
+                <div class="projects-modal__content">
 
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 6</div>
+                    <div class="content-slides">
+                        <div class="content-slides__numbertext">1 / 6</div>
                         <img src="img/project-1.jpg " style="width:100% ">
-                        <div class="case-study">
-                            <div class="case-study__item">
+                        <div class="content-slides__case-study">
+                            <div class="content-slides__case-study--item">
                                 <h2 class="text-secondary">Created the Concept and programmed a complete PWA </h2>
                                 <h3>Clever Company</h3>
                                 <h6>HTML5, SASS, Vue.js, Node,js </h6>
@@ -150,11 +150,11 @@
                         </div>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 6</div>
+                    <div class="content-slides">
+                        <div class="content-slides__numbertext">2 / 6</div>
                         <img src="img/project-2.jpg " style="width:100% ">
-                        <div class="case-study">
-                            <div class="case-study__item">
+                        <div class="content-slides__case-study">
+                            <div class="content-slides__case-study--item">
                                 <h2 class="text-secondary">My Journey</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
@@ -166,11 +166,11 @@
                         </div>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 6</div>
+                    <div class="content-slides">
+                        <div class="content-slides__numbertext">3 / 6</div>
                         <img src="img/project-3.jpg " style="width:100% ">
-                        <div class="case-study">
-                            <div class="case-study__item">
+                        <div class="content-slides__case-study">
+                            <div class="content-slides__case-study--item">
                                 <h2 class="text-secondary">My Journey To</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
@@ -182,11 +182,11 @@
                         </div>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext ">4 / 6</div>
+                    <div class="content-slides">
+                        <div class="content-slides__numbertext ">4 / 6</div>
                         <img src="img/project-4.jpg " style="width:100% ">
-                        <div class="case-study">
-                            <div class="case-study__item">
+                        <div class="content-slides__case-study">
+                            <div class="content-slides__case-study--item">
                                 <h2 class="text-secondary">My Journey To Higher</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
@@ -198,11 +198,11 @@
                         </div>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext ">5 / 6</div>
+                    <div class="content-slides">
+                        <div class="content-slides__numbertext ">5 / 6</div>
                         <img src="img/project-5.jpg " style="width:100% ">
-                        <div class="case-study">
-                            <div class="case-study__item">
+                        <div class="content-slides__case-study">
+                            <div class="content-slides__case-study--item">
                                 <h2 class="text-secondary">My Journey To Higher-Order</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
@@ -214,11 +214,11 @@
                         </div>
                     </div>
 
-                    <div class="mySlides">
-                        <div class="numbertext ">6 / 6</div>
+                    <div class="content-slides">
+                        <div class="content-slides__numbertext ">6 / 6</div>
                         <img src="img/project-6.jpg " style="width:100% ">
-                        <div class="case-study">
-                            <div class="case-study__item">
+                        <div class="content-slides__case-study">
+                            <div class="content-slides__case-study--item">
                                 <h2 class="text-secondary">My Journey To Higher-Order Functions</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
@@ -230,27 +230,27 @@
                         </div>
                     </div>
 
-                    <a class="prev" onclick="plusSlides(-1) ">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1) ">&#10095;</a>
+                    <a class="projects-modal__prev" onclick="plusSlides(-1) ">&#10094;</a>
+                    <a class="projects-modal__next" onclick="plusSlides(1) ">&#10095;</a>
 
                     <div class="demo-container">
-                        <div class="column">
-                            <img class="demo cursor " src="img/project-1.jpg " style="width:100% " onclick="currentSlide(1) " alt="Nature and sunrise ">
+                        <div class="demo-container__column">
+                            <img class="demo-container__column--demo" src="img/project-1.jpg " style="width:100% " onclick="currentSlide(1) " alt="Nature and sunrise ">
                         </div>
-                        <div class="column">
-                            <img class="demo cursor " src="img/project-2.jpg " style="width:100% " onclick="currentSlide(2) " alt="Snow ">
+                        <div class="demo-container__column">
+                            <img class="demo-container__column--demo" src="img/project-2.jpg " style="width:100% " onclick="currentSlide(2) " alt="Snow ">
                         </div>
-                        <div class="column">
-                            <img class="demo cursor " src="img/project-3.jpg " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
+                        <div class="demo-container__column">
+                            <img class="demo-container__column--demo" src="img/project-3.jpg " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
                         </div>
-                        <div class="column">
-                            <img class="demo cursor " src="img/project-4.jpg " style="width:100% " onclick="currentSlide(4) " alt="Northern Lights ">
+                        <div class="demo-container__column">
+                            <img class="demo-container__column--demo" src="img/project-4.jpg " style="width:100% " onclick="currentSlide(4) " alt="Northern Lights ">
                         </div>
-                        <div class="column">
-                            <img class="demo cursor " src="img/project-5.jpg " style="width:100% " onclick="currentSlide(5) " alt="Northern Lights ">
+                        <div class="demo-container__column">
+                            <img class="demo-container__column--demo" src="img/project-5.jpg " style="width:100% " onclick="currentSlide(5) " alt="Northern Lights ">
                         </div>
-                        <div class="column">
-                            <img class="demo cursor " src="img/project-6.jpg " style="width:100% " onclick="currentSlide(6) " alt="Northern Lights ">
+                        <div class="demo-container__column">
+                            <img class="demo-container__column--demo" src="img/project-6.jpg " style="width:100% " onclick="currentSlide(6) " alt="Northern Lights ">
                         </div>
                     </div>
                 </div>

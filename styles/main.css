@@ -420,23 +420,8 @@
           transition-delay: 0.55s;
 }
 
-.demo-container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 45px;
-}
-
-.column {
-  float: left;
-  max-width: 20%;
-  overflow: hidden;
-  max-height: 9em;
-  cursor: pointer;
-}
-
 /* The Modal (background) */
-.modal {
+.projects-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -447,14 +432,17 @@
   height: 100%;
   background-color: black;
   overflow: auto;
+  /* Modal Content */
+  /* The Close Button */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
 }
 
-.modal::-webkit-scrollbar {
+.projects-modal::-webkit-scrollbar {
   display: none;
 }
 
-/* Modal Content */
-.modal-content {
+.projects-modal__content {
   display: -ms-grid;
   display: grid;
   position: relative;
@@ -463,31 +451,7 @@
   max-width: 60vw;
 }
 
-.case-study {
-  position: relative;
-  margin: 2rem auto 0 auto;
-  max-width: 1000px;
-  background: #211b32;
-}
-
-.case-study__item {
-  background: #211b32;
-  border-bottom: 5px solid #13c03e;
-  padding: 1rem 1rem 2rem 1rem;
-  line-height: 1.5;
-}
-
-.case-study__item h2,
-.case-study__item h3 {
-  margin: 0.5rem 0;
-}
-
-.case-study__item h6 {
-  margin: 0.9rem 0;
-}
-
-/* The Close Button */
-.close {
+.projects-modal__close {
   color: white;
   position: absolute;
   top: 10px;
@@ -496,20 +460,13 @@
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.projects-modal__close:hover, .projects-modal__close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
 
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
+.projects-modal__prev, .projects-modal__next {
   cursor: pointer;
   position: absolute;
   top: 30vh;
@@ -527,22 +484,24 @@
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
+  /* On hover, add a black background color with a little bit see-through */
 }
 
-/* Position the "next button" to the right */
-.next {
+.projects-modal__prev:hover, .projects-modal__prev:hover, .projects-modal__next:hover, .projects-modal__next:hover {
+  background-color: rgba(180, 180, 180, 0.7);
+}
+
+.projects-modal__next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(180, 180, 180, 0.7);
+.content-slides {
+  display: none;
+  /* Number text (1/3 etc) */
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+.content-slides__numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -550,16 +509,53 @@
   top: 0;
 }
 
-img {
-  margin-bottom: -4px;
+.content-slides__case-study {
+  position: relative;
+  margin: 2rem auto 0 auto;
+  max-width: 1000px;
+  background: #211b32;
 }
 
-.demo {
+.content-slides__case-study--item {
+  background: #211b32;
+  border-bottom: 5px solid #13c03e;
+  padding: 1rem 1rem 2rem 1rem;
+  line-height: 1.5;
+}
+
+.content-slides__case-study--item h2,
+.content-slides__case-study--item h3 {
+  margin: 0.5rem 0;
+}
+
+.content-slides__case-study--item h6 {
+  margin: 0.9rem 0;
+}
+
+.demo-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
+.demo-container__column {
+  float: left;
+  max-width: 20%;
+  overflow: hidden;
+  max-height: 9em;
+  cursor: pointer;
+}
+
+.demo-container__column--demo {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.demo-container__column--demo:hover {
+  opacity: 1;
+}
+
+.demo-container__column--demo.active {
   opacity: 1;
 }
 

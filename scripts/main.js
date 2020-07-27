@@ -32,12 +32,12 @@ function toggleMenu() {
 //#################
 
 function openModal() {
-    document.getElementById("myModal").style.display = "block";
+    document.getElementById("pModal").style.display = "block";
     document.querySelector('nav').style.display = "none";
 }
 
 function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+    document.getElementById("pModal").style.display = "none";
     document.querySelector('nav').style.display = "block";
 }
 
@@ -54,8 +54,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("demo");
+    let slides = document.getElementsByClassName("content-slides");
+    let dots = document.getElementsByClassName("demo-container__column--demo");
 
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
