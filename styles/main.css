@@ -420,6 +420,13 @@
           transition-delay: 0.55s;
 }
 
+.demo-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
 .column {
   float: left;
   max-width: 20%;
@@ -448,22 +455,18 @@
 
 /* Modal Content */
 .modal-content {
+  display: -ms-grid;
+  display: grid;
   position: relative;
   padding: 0;
   margin: auto;
-  width: 60vw;
-  max-width: 90vw;
+  max-width: 60vw;
 }
 
 .case-study {
   position: relative;
-  width: 60vw;
   margin: 2rem auto 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 2rem;
+  max-width: 1000px;
   background: #211b32;
 }
 
@@ -504,17 +507,12 @@
   display: none;
 }
 
-.mySlides > img {
-  overflow: hidden;
-  max-height: 39em;
-}
-
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 35vh;
+  top: 30vh;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -554,14 +552,6 @@
 
 img {
   margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 3px 16px;
-  padding-bottom: 45px;
-  color: white;
 }
 
 .demo {
