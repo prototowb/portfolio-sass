@@ -425,7 +425,7 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: 45px;
   left: 0;
   top: 0;
   width: 100%;
@@ -448,14 +448,14 @@
   position: relative;
   padding: 0;
   margin: auto;
-  max-width: 60vw;
+  max-width: 80vw;
 }
 
 .projects-modal__close {
-  color: white;
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: 0px;
+  right: 10px;
+  color: white;
   font-size: 35px;
   font-weight: bold;
 }
@@ -469,7 +469,7 @@
 .projects-modal__prev, .projects-modal__next {
   cursor: pointer;
   position: absolute;
-  top: 30vh;
+  top: 15vh;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -541,9 +541,7 @@
 
 .demo-container__column {
   float: left;
-  max-width: 20%;
-  overflow: hidden;
-  max-height: 9em;
+  max-width: 33.33%;
   cursor: pointer;
 }
 
@@ -598,6 +596,15 @@
   .projects .text-secondary {
     font-size: 3rem;
   }
+  .projects-modal {
+    /* Modal Content */
+  }
+  .projects-modal__content {
+    max-width: 60vw;
+  }
+  .projects-modal__prev, .projects-modal__next {
+    top: 24vh;
+  }
   .contact__list {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -611,11 +618,23 @@
         grid-template-columns: repeat(3, 1fr);
     padding-top: 15px;
   }
+  .projects-modal {
+    /* Modal Content */
+  }
+  .projects-modal__prev, .projects-modal__next {
+    top: 36vh;
+  }
+  .demo-container__column {
+    max-width: 25%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
   .projects__items {
     padding-top: 30px;
+  }
+  .demo-container__column {
+    max-width: 20%;
   }
 }
 

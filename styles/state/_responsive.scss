@@ -37,6 +37,16 @@
             font-size: 3rem;
         }
     }
+    .projects-modal {
+        /* Modal Content */
+        &__content {
+            max-width: 60vw;
+        }
+        &__prev,
+        &__next {
+            top: 24vh;
+        }
+    }
     .contact__list {
         grid-template-columns: repeat(3, 1fr);
         margin-left: 60px;
@@ -48,10 +58,27 @@
         grid-template-columns: repeat(3, 1fr);
         padding-top: 15px;
     }
+    .projects-modal {
+        /* Modal Content */
+        &__prev,
+        &__next {
+            top: 36vh;
+        }
+    }
+    .demo-container {
+        &__column {
+            max-width: 25%;
+        }
+    }
 }
 
 @include media-xl {
     .projects__items {
         padding-top: 30px;
+    }
+    .demo-container {
+        &__column {
+            max-width: 20%;
+        }
     }
 }

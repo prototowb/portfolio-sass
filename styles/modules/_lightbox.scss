@@ -4,7 +4,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 60px;
+    padding-top: 45px;
     left: 0;
     top: 0;
     width: 100%;
@@ -20,14 +20,14 @@
         position: relative;
         padding: 0;
         margin: auto;
-        max-width: 60vw;
+        max-width: 80vw;
     }
     /* The Close Button */
     &__close {
-        color: white;
         position: absolute;
-        top: 10px;
-        right: 25px;
+        top: 0px;
+        right: 10px;
+        color: white;
         font-size: 35px;
         font-weight: bold;
         &:hover,
@@ -42,7 +42,7 @@
     &__next {
         cursor: pointer;
         position: absolute;
-        top: 30vh;
+        top: 15vh;
         width: auto;
         padding: 16px;
         margin-top: -50px;
@@ -105,9 +105,7 @@
     margin-bottom: 45px;
     &__column {
         float: left;
-        max-width: 20%;
-        overflow: hidden;
-        max-height: 9em;
+        max-width: 33.33%;
         cursor: pointer;
         &--demo {
             opacity: 0.6;

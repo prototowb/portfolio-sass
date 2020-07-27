@@ -34,11 +34,13 @@ function toggleMenu() {
 function openModal() {
     document.getElementById("pModal").style.display = "block";
     document.querySelector('nav').style.display = "none";
+    menuBtn.style.visibility = "hidden";
 }
 
 function closeModal() {
     document.getElementById("pModal").style.display = "none";
     document.querySelector('nav').style.display = "block";
+    menuBtn.style.visibility = "visible";
 }
 
 let slideIndex = 1;
