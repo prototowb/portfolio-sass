@@ -454,14 +454,15 @@
 .projects-modal__close {
   position: absolute;
   top: 0px;
-  right: 10px;
-  color: white;
-  font-size: 35px;
+  right: 15px;
+  color: #13c03e;
+  font-size: 3rem;
   font-weight: bold;
+  z-index: 9;
 }
 
 .projects-modal__close:hover, .projects-modal__close:focus {
-  color: #999;
+  color: #7f628a;
   text-decoration: none;
   cursor: pointer;
 }
@@ -604,6 +605,11 @@
   }
   .projects-modal__prev, .projects-modal__next {
     top: 24vh;
+  }
+  .projects-modal__close {
+    top: 15px;
+    right: 30px;
+    font-size: 4.5rem;
   }
   .contact__list {
     -ms-grid-columns: (1fr)[3];

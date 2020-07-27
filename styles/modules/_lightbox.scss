@@ -26,13 +26,14 @@
     &__close {
         position: absolute;
         top: 0px;
-        right: 10px;
-        color: white;
-        font-size: 35px;
+        right: 15px;
+        color: $accent-color;
+        font-size: 3rem;
         font-weight: bold;
+        z-index: 9;
         &:hover,
         &:focus {
-            color: #999;
+            color: rgb(127, 98, 138);
             text-decoration: none;
             cursor: pointer;
         }

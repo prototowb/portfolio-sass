@@ -46,6 +46,11 @@
         &__next {
             top: 24vh;
         }
+        &__close {
+            top: 15px;
+            right: 30px;
+            font-size: 4.5rem;
+        }
     }
     .contact__list {
         grid-template-columns: repeat(3, 1fr);
