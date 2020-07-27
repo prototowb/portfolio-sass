@@ -26,6 +26,13 @@ function toggleMenu() {
     }
 }
 
+window.onresize = function() {
+    hideHamburger()
+}
+
+function hideHamburger() {
+    if (window.innerWidth > 768) { menuBtn.style.visibility = "hidden"; }
+}
 
 //#################
 //#    Lightbox
@@ -34,13 +41,13 @@ function toggleMenu() {
 function openModal() {
     document.getElementById("pModal").style.display = "block";
     document.querySelector('nav').style.display = "none";
-    menuBtn.style.visibility = "hidden";
+    if (window.innerWidth < 768) { menuBtn.style.visibility = "hidden"; }
 }
 
 function closeModal() {
     document.getElementById("pModal").style.display = "none";
     document.querySelector('nav').style.display = "block";
-    menuBtn.style.visibility = "visible";
+    if (window.innerWidth < 768) { menuBtn.style.visibility = "visible"; }
 }
 
 let slideIndex = 1;
