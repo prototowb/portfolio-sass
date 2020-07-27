@@ -69,7 +69,7 @@
         @include transition-ease;
         &:hover {
             font-weight: 500;
-            color: rgba($primary-color, 0.75);
+            color: darken(rgba($accent-color, 1), 15%);
         }
     }
     .social-icons {
