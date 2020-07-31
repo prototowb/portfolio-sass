@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Create a 'click to tweet' button with appropriate attributes
         twitterBtn = document.createElement("i");
-        twitterBtn.classList.add("fa fa-twitter");
+        twitterBtn.classList.add("fa\u200Bfa-twitter");
         clickToTweetBtn = document.createElement("a").appendChild(twitterBtn);
         clickToTweetBtn.innerHTML = '<br><br>...tweet_this...<br><br>';
 

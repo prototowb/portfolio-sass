@@ -13,7 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9) 30%, rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image.jpg") left center;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9) 30%, rgba(11, 9, 17, 0.6)), url("../img/image.jpg") left center;
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@
 .about__image {
   height: 50vh;
   width: 100%;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image1.jpg") left center;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image1.jpg") left center;
   background-size: fit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +114,7 @@
 .projects__image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image.jpg") left center;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image.jpg") left center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,7 +240,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/resized-lg/image1.jpg") left center;
+  background: linear-gradient(45deg, rgba(11, 9, 17, 0.9), rgba(11, 9, 17, 0.6)), url("../img/image1.jpg") left center;
   background-size: fit;
 }
 
