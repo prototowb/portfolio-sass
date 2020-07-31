@@ -9,6 +9,10 @@
 './modules/menu',
 './modules/lightbox',
 './state/responsive';
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: $primary-color;
     color: set-text-color($primary-color);
