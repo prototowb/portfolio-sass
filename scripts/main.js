@@ -77,3 +77,54 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
+//#################
+//#    click-to-tweet
+//#################
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Step 1. Get all quote elements inside the article
+    const articleBody = document.getElementById('article');
+    const quotes = [...articleBody.querySelectorAll('quote, blockquote')];
+
+    let tweetableUrl = "";
+    let clickToTweetBtn = null;
+    const currentPageUrl = window.location.href;
+
+    quotes.forEach(function(quote) {
+        // Create a tweetable url
+        tweetableUrl = makeTweetableUrl(
+            quote.innerText, currentPageUrl
+        );
+
+        // Create a 'click to tweet' button with appropriate attributes
+        twitterBtn = document.createElement("i");
+        twitterBtn.classList.add("fa fa-twitter");
+        clickToTweetBtn = document.createElement("a").appendChild(twitterBtn);
+        clickToTweetBtn.innerHTML = '<br><br>...tweet_this...<br><br>';
+
+        clickToTweetBtn.setAttribute("href", tweetableUrl);
+        clickToTweetBtn.onclick = onClickToTweet;
+
+        // Add button to every blockquote
+        quote.appendChild(clickToTweetBtn);
+
+    });
+});
+
+function makeTweetableUrl(text, pageUrl) {
+    const tweetableText = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + encodeURIComponent(text);
+    return tweetableText;
+}
+
+function onClickToTweet(e) {
+    e.preventDefault();
+
+    window.open(
+        e.target.getAttribute("href"),
+        "twitterwindow",
+        "height=450, width=550, toolbar=0, location=0, menubar=0, directories=0,scrollbars=0"
+    );
+
+}

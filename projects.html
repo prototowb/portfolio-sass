@@ -48,9 +48,7 @@
 
             <div class="projects__items">
                 <div class="projects__item">
-                    <picture>
-                        <img src="img/project-1.jpg" srcset="img/resized-md/project-1.jpg 2016w, img/resized-lg/project-1.jpg 3024w, img/resized-xl/project-1.jpg 4032w" sizes="(min-width: 768px), 100vw">
-                    </picture>
+                    <img src="img/resized-md/project-1.jpg">
                     <div class="projects__btns">
                         <a href="#!" class="projects__btn">
                             <i class="fas fa-eye fa-2x" onclick="openModal();currentSlide(1)"></i>
@@ -136,26 +134,36 @@
 
                     <div class="content-slides">
                         <div class="content-slides__numbertext">1 / 6</div>
-                        <img src="img/project-1.jpg " style="width:100% ">
-                        <div class="content-slides__case-study">
-                            <div class="content-slides__case-study--item">
-                                <h2 class="text-secondary">Created the Concept and programmed a complete PWA </h2>
-                                <h3>Clever Company</h3>
-                                <h6>HTML5, SASS, Vue.js, Node,js </h6>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
-                                    asperiores qui molestiae. Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum sit aperiam ratione? Cum
-                                    in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi nam aliquid! Lorem ipsum
-                                    dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente explicabo iusto.</p>
+                        <picture>
+                            <source srcset="img/resized-xl/project-1.jpg 4032w" media="(min-width: 1200px), 100vw">
+                            <source srcset="img/resized-lg/project-1.jpg 3024w" media="(min-width: 1024px), 100vw">
+                            <source srcset="img/resized-md/project-1.jpg 2016w" media="(min-width: 768px), 100vw">
+                            <img src="img/project-1.jpg " srcset="img/resized-md/project-1.jpg 2016w">
+                        </picture>
+                        <div class=" content-slides__case-study ">
+                            <div class="content-slides__case-study--item ">
+                                <artilce id="article ">
+                                    <h2 class="text-secondary ">Created the Concept and programmed a complete PWA </h2>
+                                    <h3>Clever Company</h3>
+                                    <h6>HTML5, SASS, Vue.js, Node,js </h6>
+                                    <p>
+                                        <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero
+                                            adipisci asperiores qui molestiae.</blockquote> Voluptates porro officia ut aut repudiandae ea repellat natus ipsum harum sunt vel, nulla odit voluptate unde corrupti et non quas quidem quis facere quaerat rerum
+                                        sit aperiam ratione? Cum in dolor sequi temporibus rerum dolorum veritatis perspiciatis fugiat. Repudiandae ipsa harum blanditiis alias enim quidem officiis a ipsam. Officiis reprehenderit illo dolor? Aut ea commodi
+                                        nam aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus magni tempore laborum. Fuga ex vero provident. Quisquam at quas officia culpa? Exercitationem vitae consectetur vel quaerat, sapiente
+                                        explicabo iusto.
+                                    </p>
+                                </artilce>
                             </div>
                         </div>
                     </div>
 
-                    <div class="content-slides">
-                        <div class="content-slides__numbertext">2 / 6</div>
+                    <div class="content-slides ">
+                        <div class="content-slides__numbertext ">2 / 6</div>
                         <img src="img/project-2.jpg " style="width:100% ">
-                        <div class="content-slides__case-study">
-                            <div class="content-slides__case-study--item">
-                                <h2 class="text-secondary">My Journey</h2>
+                        <div class="content-slides__case-study ">
+                            <div class="content-slides__case-study--item ">
+                                <h2 class="text-secondary ">My Journey</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
@@ -166,12 +174,12 @@
                         </div>
                     </div>
 
-                    <div class="content-slides">
-                        <div class="content-slides__numbertext">3 / 6</div>
+                    <div class="content-slides ">
+                        <div class="content-slides__numbertext ">3 / 6</div>
                         <img src="img/project-3.jpg " style="width:100% ">
-                        <div class="content-slides__case-study">
-                            <div class="content-slides__case-study--item">
-                                <h2 class="text-secondary">My Journey To</h2>
+                        <div class="content-slides__case-study ">
+                            <div class="content-slides__case-study--item ">
+                                <h2 class="text-secondary ">My Journey To</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
@@ -182,12 +190,12 @@
                         </div>
                     </div>
 
-                    <div class="content-slides">
+                    <div class="content-slides ">
                         <div class="content-slides__numbertext ">4 / 6</div>
                         <img src="img/project-4.jpg " style="width:100% ">
-                        <div class="content-slides__case-study">
-                            <div class="content-slides__case-study--item">
-                                <h2 class="text-secondary">My Journey To Higher</h2>
+                        <div class="content-slides__case-study ">
+                            <div class="content-slides__case-study--item ">
+                                <h2 class="text-secondary ">My Journey To Higher</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
@@ -198,12 +206,12 @@
                         </div>
                     </div>
 
-                    <div class="content-slides">
+                    <div class="content-slides ">
                         <div class="content-slides__numbertext ">5 / 6</div>
                         <img src="img/project-5.jpg " style="width:100% ">
-                        <div class="content-slides__case-study">
-                            <div class="content-slides__case-study--item">
-                                <h2 class="text-secondary">My Journey To Higher-Order</h2>
+                        <div class="content-slides__case-study ">
+                            <div class="content-slides__case-study--item ">
+                                <h2 class="text-secondary ">My Journey To Higher-Order</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
@@ -214,12 +222,12 @@
                         </div>
                     </div>
 
-                    <div class="content-slides">
+                    <div class="content-slides ">
                         <div class="content-slides__numbertext ">6 / 6</div>
                         <img src="img/project-6.jpg " style="width:100% ">
-                        <div class="content-slides__case-study">
-                            <div class="content-slides__case-study--item">
-                                <h2 class="text-secondary">My Journey To Higher-Order Functions</h2>
+                        <div class="content-slides__case-study ">
+                            <div class="content-slides__case-study--item ">
+                                <h2 class="text-secondary ">My Journey To Higher-Order Functions</h2>
                                 <h3>Some Fancy Company Name</h3>
                                 <h6>Frontend Developer</h6>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque harum quibusdam ut, quia consectetur fugit dicta, repellendus exercitationem accusantium porro ipsam tenetur non magnam sequi veniam libero adipisci
@@ -230,27 +238,27 @@
                         </div>
                     </div>
 
-                    <a class="projects-modal__prev" onclick="plusSlides(-1) ">&#10094;</a>
-                    <a class="projects-modal__next" onclick="plusSlides(1) ">&#10095;</a>
+                    <a class="projects-modal__prev " onclick="plusSlides(-1) ">&#10094;</a>
+                    <a class="projects-modal__next " onclick="plusSlides(1) ">&#10095;</a>
 
-                    <div class="demo-container">
-                        <div class="demo-container__column">
-                            <img class="demo-container__column--demo" src="img/project-1.jpg " style="width:100% " onclick="currentSlide(1) " alt="Nature and sunrise ">
+                    <div class="demo-container ">
+                        <div class="demo-container__column ">
+                            <img class="demo-container__column--demo " src="img/project-1.jpg " style="width:100% " onclick="currentSlide(1) " alt="Nature and sunrise ">
                         </div>
-                        <div class="demo-container__column">
-                            <img class="demo-container__column--demo" src="img/project-2.jpg " style="width:100% " onclick="currentSlide(2) " alt="Snow ">
+                        <div class="demo-container__column ">
+                            <img class="demo-container__column--demo " src="img/project-2.jpg " style="width:100% " onclick="currentSlide(2) " alt="Snow ">
                         </div>
-                        <div class="demo-container__column">
-                            <img class="demo-container__column--demo" src="img/project-3.jpg " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
+                        <div class="demo-container__column ">
+                            <img class="demo-container__column--demo " src="img/project-3.jpg " style="width:100% " onclick="currentSlide(3) " alt="Mountains and fjords ">
                         </div>
-                        <div class="demo-container__column">
-                            <img class="demo-container__column--demo" src="img/project-4.jpg " style="width:100% " onclick="currentSlide(4) " alt="Northern Lights ">
+                        <div class="demo-container__column ">
+                            <img class="demo-container__column--demo " src="img/project-4.jpg " style="width:100% " onclick="currentSlide(4) " alt="Northern Lights ">
                         </div>
-                        <div class="demo-container__column">
-                            <img class="demo-container__column--demo" src="img/project-5.jpg " style="width:100% " onclick="currentSlide(5) " alt="Northern Lights ">
+                        <div class="demo-container__column ">
+                            <img class="demo-container__column--demo " src="img/project-5.jpg " style="width:100% " onclick="currentSlide(5) " alt="Northern Lights ">
                         </div>
-                        <div class="demo-container__column">
-                            <img class="demo-container__column--demo" src="img/project-6.jpg " style="width:100% " onclick="currentSlide(6) " alt="Northern Lights ">
+                        <div class="demo-container__column ">
+                            <img class="demo-container__column--demo " src="img/project-6.jpg " style="width:100% " onclick="currentSlide(6) " alt="Northern Lights ">
                         </div>
                     </div>
                 </div>
