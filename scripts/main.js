@@ -59,6 +59,7 @@ function plusSlides(n) {
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
+    document.getElementById('pModal').scrollTop = 0;
 }
 
 function showSlides(n) {
