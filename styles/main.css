@@ -432,6 +432,7 @@
   height: 100%;
   background-color: black;
   overflow: auto;
+  scroll-behavior: smooth;
   /* Modal Content */
   /* The Close Button */
   /* Next & previous buttons */
