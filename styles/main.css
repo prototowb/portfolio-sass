@@ -644,6 +644,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0b0911;
   color: #fff;
