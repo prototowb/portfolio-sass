@@ -3,7 +3,7 @@
 [![powered-by-sass](https://img.shields.io/badge/powered%20by-sass-pink.svg?style=flat-square)](https://sass-lang.com)
 
 
-A project to learn sass with - That is what this repository is. Maybe i will build around it once finished. We'll see :) https://prototowb.github.io/portfolio-sass/
+A project to learn sass with - https://prototowb.github.io/portfolio-sass/
 
 This repository contains:
 
