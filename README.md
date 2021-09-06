@@ -25,7 +25,7 @@ The goals for this repository are:
 
 1. To document my journey learning sass by building a well crafted portfolio.
 2. Show the implementation of sass in a real project.
-3. Showcase the usage of the html <picture> Tag and handling the responsivenss of images. 
+3. Showcase the usage of the html picture Tag and handling the responsivenss of images (the first one in the gallery has multiple sources for different resolutions). 
 4. Learing how to write good READMEs - This Readme is fully "standard-readme" compliant.
 
 ## Install
