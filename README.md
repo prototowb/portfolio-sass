@@ -54,7 +54,7 @@ Feel free to dive in! Open an issue or submit PRs.
 portfolio-sass follows the Contributor Covenant Code of Conduct.
 
 ### Contributors
-This project exists thanks to someone special. :D So, thank you for reintroducing me to the power of SASS/SCSS!
+
 
 ## License
 [MIT](LICENSE) © Tobias Rauer
